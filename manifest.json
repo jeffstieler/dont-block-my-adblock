@@ -1,0 +1,26 @@
+{
+  "name": "Don't Block My Adblock!",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Stop websites from blocking content when using Adblock.",
+  "homepage_url": "https://github.com/jeffstieler/dont-block-my-adblock",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*"
+      ],
+      "js": [
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
